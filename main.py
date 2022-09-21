@@ -2,6 +2,7 @@ import smtplib
 import yfinance as yf
 import creds
 
+# This is the old code
 
 eur_usd = round(yf.Ticker('EURUSD=X').history(period='1d')['Close'][0],2)
 gbp_usd = round(yf.Ticker('GBPUSD=X').history(period='1d')['Close'][0],2)
