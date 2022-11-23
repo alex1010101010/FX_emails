@@ -3,10 +3,7 @@ import yfinance as yf
 from dotenv import load_dotenv
 import os
 
-
 load_dotenv()
-
-
 
 eur_usd = round(yf.Ticker('EURUSD=X').history(period='1d')['Close'][0],2)
 gbp_usd = round(yf.Ticker('GBPUSD=X').history(period='1d')['Close'][0],2)
